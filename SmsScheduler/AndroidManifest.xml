@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smsscheduler"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <intent-filter>
+        <action android:name="android.intent.action.PICK" >
+        </action>
+
+        <category android:name="android.intent.category.DEFAULT" >
+        </category>
+
+        <data
+            android:path="contacts"
+            android:scheme="content" >
+        </data>
+    </intent-filter>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.smsscheduler.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.smsscheduler.Calender"
+            android:label="@string/title_activity_calender" >
+        </activity>
+        <activity
+            android:name="com.example.smsscheduler.Info"
+            android:label="@string/title_activity_info" >
+        </activity>
+        <activity
+            android:name="com.example.smsscheduler.Schedule"
+            android:label="@string/title_activity_schedule" >
+        </activity>
+    </application>
+
+</manifest>

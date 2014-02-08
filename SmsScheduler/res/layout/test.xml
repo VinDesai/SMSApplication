@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:stretchColumns="*" 
+    android:baselineAligned="true"
+    
+    android:background="@drawable/coolgradient">
+    <TableRow>
+
+        <TextView
+            android:id="@+id/contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit"
+            android:ems="10" >
+
+            
+       </TextView>>
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add" 
+            />
+        
+        </TableRow>
+         <TableRow>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+         </TableRow>
+        
+        <TableRow>
+
+            <EditText
+                android:id="@+id/msg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/textview"
+                android:ems="10">
+             
+            </EditText>>
+             <EditText
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview"
+            android:text="count"
+            android:ems="0" />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+         </TableRow>
+ <TableRow>
+        <Button
+            android:id="@+id/schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/coolgradient"
+            android:text="Schedule" />
+         </TableRow>
+         <TableRow>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+         </TableRow>
+          <TableRow>
+
+        <Button
+            android:id="@+id/sendnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/coolgradient"
+            android:text="Send Now" />
+         </TableRow>
+         <TableRow>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+         </TableRow>
+          
+<TableRow>
+          <Button
+              android:id="@+id/info"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/coolgradient"
+              android:text="Info" />
+</TableRow>
+</TableLayout>
